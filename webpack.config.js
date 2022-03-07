@@ -4,11 +4,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    path: path.resolve(__dirname, "src/index.js"),
+    main: path.resolve(__dirname, "src/index.js"),
+    history: path.resolve(__dirname, "src/history.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
   },
   module: {
     rules: [
@@ -21,6 +22,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/history.html",
+      chunks: ["history"],
+      filename: "history.html",
     }),
   ],
   devServer: {
