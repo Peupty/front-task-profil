@@ -1,0 +1,36 @@
+$unit: 0.25rem;
+
+@for $i from 1 through 12 {
+  .mt-#{$i} {
+    margin-top: $unit * $i;
+  }
+  .mb-#{$i} {
+    margin-bottom: $unit * $i;
+  }
+  .ml-#{$i} {
+    margin-left: $unit * $i;
+  }
+  .mr-#{$i} {
+    margin-right: $unit * $i;
+  }
+  .mx-#{$i} {
+    margin-right: $unit * $i;
+    margin-left: $unit * $i;
+  }
+  .my-#{$i} {
+    margin-top: $unit * $i;
+    margin-bottom: $unit * $i;
+  }
+}
+
+@each $name, $val in $colors {
+  .text {
+    &--#{$name} {
+      color: $val;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

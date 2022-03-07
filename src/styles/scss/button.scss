@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: $color-light;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 120px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+
+  &--light {
+    background-color: $color-light;
+    border: 3px solid $color-green;
+    color: $color-dark;
+
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+      border-color: $color-dark;
+    }
+  }
+}

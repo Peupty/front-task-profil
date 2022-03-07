@@ -1,0 +1,27 @@
+.table {
+  color: $color-dark;
+
+  thead {
+    td {
+      font-weight: 700;
+      background-color: $color-green;
+
+      &.clickable {
+        cursor: pointer;
+
+        &:hover {
+          color: $color-orange;
+        }
+      }
+    }
+  }
+
+  tbody {
+    background-color: $color-light;
+  }
+
+  td {
+    padding: 2px 5px;
+    text-align: center;
+  }
+}
