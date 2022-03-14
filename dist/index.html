@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <main class="content">
+        <div id="user" class="user">
+            <picture id="user-picture" class="user__picture"></picture>
+            <div class="user__info">
+                <h1 id="user-name" class="user__name"></h1>
+            </div>
+            <div class="user__info">
+                <label for="user-registered">registered at:</label>
+                <h2 id="user-registered"></h2>
+            </div>
+            <div class="user__info">
+                <label for="user-nationality">nationality:</label>
+                <h2 id="user-nationality"></h2>
+            </div>
+            <div class="user__info">
+                <label for="user-address">address:</label>
+                <h2 id="user-address"></h2>
+            </div>
+        </div>
+        <div class="mt-4">
+            <input type="checkbox" name="hide-address" id="hide-address">
+            <label for="hide-address" class="text--light">hide address</label>
+        </div>
+        <button id="generate-user" class="button button--light mt-4">new user</button>
+        <a href="/history.html" class="text--light mt-8">See previously generated users</a>
+    </main>
+</body>
+
+</html>
